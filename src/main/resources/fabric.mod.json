@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "team_compasses",
+  "version": "${version}",
+  "name": "Team compasses",
+  "description": "Adds team compasses to make it easier to find the base in multiplayer mode.",
+  "authors": [
+    "BardRadogost"
+  ],
+  "contact": {
+    "homepage": "https://legacyfabric.net/",
+    "sources": "https://github.com/Legacy-Fabric/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/team_compasses/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.teamcompasses.TeamCompassesMod"
+    ],
+    "btw:addon": [
+      "btw.community.teamcompasses.TeamCompassesAddon"
+    ]
+  },
+  "custom": {
+    "btw:addon_prefix": "EX"
+  },
+  "mixins": [
+    "team_compasses.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": "1.6.4"
+  }
+}

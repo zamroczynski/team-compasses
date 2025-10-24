@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.fabricmc.teamcompasses.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ServerCommandManagerMixin"
+  ],
+  "client": [
+    "TextureCompassMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
