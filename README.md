@@ -1,26 +1,43 @@
 # Team Compasses
 
-This is an Addon for the multiplayer game BTW CE 3.0.0. "Team Compasses" introduces two new items: the Team 1 Compass and the Team 2 Compass. 
-They function like the regular compass, but instead of pointing to the world spawn, they guide players to their team's rally point.
+Team Compasses is an addon for Better Than Wolves CE 3.0.0 that enhances the multiplayer experience. It introduces two new items: the **Team 1 Compass** and the **Team 2 Compass**. These function like the regular compass, but instead of pointing to the world spawn, they guide players to their team's designated rally point.
 
-## Features:
+**This is the first mod I have ever created**, designed to solve a problem I encountered while playing with a larger group of friends.
 
-* Two New Compasses: One for each team, designed to feel like a natural part of the game.
-* Simple Crafting Recipes:
-  * Compass + Red Flower = Team 1 Compass
-  * Compass + Yellow Flower = Team 2 Compass
-* Admin Command: Use /setbase <team> <x> <y> <z> to set or update the base location for the specified team.
-* Default Behavior: If a team's base has not been set, the team compass will behave like a regular compass, pointing to the world spawn.
+### [Download Latest Realease](https://github.com/zamroczynski/team-compasses/releases/tag/1.0.0)
 
-This is the perfect tool for organized multiplayer events, allowing players to focus on teamwork and competition instead of spending hours searching for their home base.
+[View on GitHub](https://github.com/zamroczynski/team-compasses)
 
-## Instalation:
+## Features
 
-Place the .jar file in the mods folder on both the client and server.
+- **Two New Compasses**: One for each team.
+- Simple Crafting Recipes: Easy to craft for all players.
+- Admin Command: A simple command for server operators to set base locations.
+- Vanilla Behavior: If a base isn't set, the compass defaults to pointing at the world spawn.
 
-### Bugs:
+## Instalation
+Place the `.jar` file in the `mods` folder on both the client and server.
 
-* To ensure that the compass points in the correct direction, you must hold it in your hand.
+## Usage
 
-#### Notification:
-This is the first mod I have ever created. Please do not use it on your single-player worlds.
+### For Player (Crafting)
+
+The compasses can be crafted by any player
+
+- Team 1 Compass: `Compass + Red Flower`
+- Team 2 Compass: `Compass + Yellow Flower`
+
+**Important:** To ensure the compass points in the correct direction, you must be holding it in your main hand.
+
+### For Server Admins (Commands)
+
+Server operators can set the base location for each team using the `/setbase` command.
+
+**Syntax:**
+`/setbase <team_number> <x> <y> <z>`
+
+**Example:**
+`/setbase 1 1234 64 -3421`
+
+## Disclaimer
+This mod only adds the compass items; it does not assign players to teams or manage team membership. Any player can craft and use both the Team 1 and Team 2 compasses. It is intended as a utility for organized gameplay.
